@@ -21,6 +21,14 @@ Connect via Putty to the pi and then do following commands:
 
 >bash ~/moonraker-timelapse/install.sh
 
+## Pressure Advance
+
+https://www.klipper3d.org/Pressure_Advance.html
+
+STL: https://www.klipper3d.org/prints/square_tower.stl
+
+use the PA Profil in Superslicer
+
 
 ## Input Shaping - uncomment the sections i showed in my video:
 

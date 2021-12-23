@@ -8,57 +8,58 @@ Watch my Youtube Videos to know how it works ;)
 Link:
 
 
-Discord: https://discord.gg/xnm6GsynGk
+#### Discord: https://discord.gg/xnm6GsynGk
 
 
-<h2>Timelapse installation:</h2>
+## Timelapse installation:
 
 Connect via Putty to the pi and then do following commands:
 
-cd ~/
+>cd ~/
 
-git clone https://github.com/mainsail-crew/moonraker-timelapse.git
+>git clone https://github.com/mainsail-crew/moonraker-timelapse.git
 
-bash ~/moonraker-timelapse/install.sh
+>bash ~/moonraker-timelapse/install.sh
 
 
-<h2>Input Shaping - uncomment the sections i showed in my video:</h2>
+## Input Shaping - uncomment the sections i showed in my video:
 
 https://www.klipper3d.org/Measuring_Resonances.html
 
 
 
-Shortlist Commands:
+### Shortlist Commands:
 
-~/klippy-env/bin/pip install -v numpy
+>~/klippy-env/bin/pip install -v numpy
 
-sudo apt update
-sudo apt install python-numpy python-matplotlib
+>sudo apt update
+>sudo apt install python-numpy python-matplotlib
 
-sudo reboot
+>sudo reboot
 
-cd ~/klipper/
-sudo cp "./scripts/klipper-mcu-start.sh" /etc/init.d/klipper_mcu
-sudo update-rc.d klipper_mcu defaults
+>cd ~/klipper/
+>sudo cp "./scripts/klipper-mcu-start.sh" /etc/init.d/klipper_mcu
+>sudo update-rc.d klipper_mcu defaults
 
-sudo raspi-config            #enable SPI in interfacing options
+>sudo raspi-config            #enable SPI in interfacing options
 
-sudo reboot
+>sudo reboot
 
-cd ~/klipper/
-make menuconfig              #Microcontroller: Linux process
+>cd ~/klipper/
+>make menuconfig              #Microcontroller: Linux process
 
-sudo service klipper stop
-make flash
-sudo service klipper start
+>sudo service klipper stop
+>make flash
+>sudo service klipper start
 
-sudo usermod -a -G tty pi
+>sudo usermod -a -G tty pi
 
-ACCELEROMETER_QUERY          #Testing the Sensor if there is a Invalid adxl then check the wireing or the offical klipper site
+>ACCELEROMETER_QUERY          #Testing the Sensor if there is a Invalid adxl then check the wireing or the offical klipper site
 
-TEST_RESONANCES AXIS=X
-TEST_RESONANCES AXIS=Y
+>TEST_RESONANCES AXIS=X
+>TEST_RESONANCES AXIS=Y
 
-To create the graph:
-~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
-~/klipper/scripts/calibrate_shaper.py /tmp/resonances_y_*.csv -o /tmp/shaper_calibrate_y.png
+### To create the graph:
+
+>~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
+>~/klipper/scripts/calibrate_shaper.py /tmp/resonances_y_*.csv -o /tmp/shaper_calibrate_y.png

@@ -38,7 +38,9 @@ https://www.klipper3d.org/Measuring_Resonances.html
 >sudo reboot
 
 >cd ~/klipper/
+
 >sudo cp "./scripts/klipper-mcu-start.sh" /etc/init.d/klipper_mcu
+
 >sudo update-rc.d klipper_mcu defaults
 
 >sudo raspi-config            #enable SPI in interfacing options

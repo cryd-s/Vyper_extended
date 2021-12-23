@@ -8,9 +8,10 @@ Watch my Youtube Videos to know how it works ;)
 Link:
 
 
+Discord: https://discord.gg/xnm6GsynGk
 
 _____________________________________________________________________________
-Timelapse installation:
+<h1>Timelapse installation:</h1>
 
 Connect via Putty to the pi and then do following commands:
 
@@ -21,9 +22,11 @@ git clone https://github.com/mainsail-crew/moonraker-timelapse.git
 bash ~/moonraker-timelapse/install.sh
 _____________________________________________________________________________
 
-Input Shaping - uncomment the sections i showed in my video:
+<h1>Input Shaping - uncomment the sections i showed in my video:</h1>
 
 https://www.klipper3d.org/Measuring_Resonances.html
+
+
 
 Shortlist Commands:
 

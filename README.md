@@ -1,4 +1,4 @@
-# Vyper_extended
+# Vyper extended
 This is a extended Vyper Klipper / Mainsail Config
 
 This Files are only compatible together!
@@ -10,8 +10,8 @@ Link:
 
 Discord: https://discord.gg/xnm6GsynGk
 
-_____________________________________________________________________________
-<h1>Timelapse installation:</h1>
+
+<h2>Timelapse installation:</h2>
 
 Connect via Putty to the pi and then do following commands:
 
@@ -20,9 +20,9 @@ cd ~/
 git clone https://github.com/mainsail-crew/moonraker-timelapse.git
 
 bash ~/moonraker-timelapse/install.sh
-_____________________________________________________________________________
 
-<h1>Input Shaping - uncomment the sections i showed in my video:</h1>
+
+<h2>Input Shaping - uncomment the sections i showed in my video:</h2>
 
 https://www.klipper3d.org/Measuring_Resonances.html
 

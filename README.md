@@ -33,6 +33,7 @@ https://www.klipper3d.org/Measuring_Resonances.html
 >~/klippy-env/bin/pip install -v numpy
 
 >sudo apt update
+
 >sudo apt install python-numpy python-matplotlib
 
 >sudo reboot
@@ -48,10 +49,13 @@ https://www.klipper3d.org/Measuring_Resonances.html
 >sudo reboot
 
 >cd ~/klipper/
+
 >make menuconfig              #Microcontroller: Linux process
 
 >sudo service klipper stop
+
 >make flash
+
 >sudo service klipper start
 
 >sudo usermod -a -G tty pi
@@ -59,9 +63,11 @@ https://www.klipper3d.org/Measuring_Resonances.html
 >ACCELEROMETER_QUERY          #Testing the Sensor if there is a Invalid adxl then check the wireing or the offical klipper site
 
 >TEST_RESONANCES AXIS=X
+
 >TEST_RESONANCES AXIS=Y
 
 ### To create the graph:
 
 >~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
+
 >~/klipper/scripts/calibrate_shaper.py /tmp/resonances_y_*.csv -o /tmp/shaper_calibrate_y.png

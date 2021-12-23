@@ -71,3 +71,13 @@ https://www.klipper3d.org/Measuring_Resonances.html
 >~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
 
 >~/klipper/scripts/calibrate_shaper.py /tmp/resonances_y_*.csv -o /tmp/shaper_calibrate_y.png
+
+
+## Max Accel
+
+https://www.klipper3d.org/Resonance_Compensation.html#tuning
+
+STL: https://www.klipper3d.org/prints/ringing_tower.stl
+
+>TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1250 FACTOR=100 BAND=5
+

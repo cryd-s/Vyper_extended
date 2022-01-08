@@ -42,7 +42,7 @@ https://www.klipper3d.org/Measuring_Resonances.html
 
 >sudo apt update
 
->sudo apt install python-numpy python-matplotlib
+>sudo apt install python3-numpy python3-matplotlib
 
 >sudo reboot
 

@@ -13,7 +13,7 @@ Premium Variante*: https://amzn.to/3zwgy9i
 
 PROBE_CALIBRATE
 
-TESTZ=-0.1
+TESTZ z=-0.1
 
 ACCEPT 
 

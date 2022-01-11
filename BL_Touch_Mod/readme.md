@@ -1,11 +1,16 @@
-Folgende BlTouch Modelle funktionieren (getestet):
+###Folgende BlTouch Modelle funktionieren (getestet):
+
+Günstige Variante: https://amzn.to/3tdm6nM
+
+Premium Variante: https://amzn.to/3zwgy9i
 
 
 
+###Befehle:
 
-
-Befehle:
 
 PROBE_CALIBRATE
+
 TESTZ=-0.1
+
 ACCEPT 

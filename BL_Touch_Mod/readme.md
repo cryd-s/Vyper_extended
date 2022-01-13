@@ -1,6 +1,10 @@
 ### Youtube:
 https://youtu.be/gSbswjLxbUg
 
+## STL
+
+https://www.prusaprinters.org/de/prints/117941-anycubic-vyper-bl-touch-mount
+
 
 ### Folgende BlTouch Modelle funktionieren (getestet):
 

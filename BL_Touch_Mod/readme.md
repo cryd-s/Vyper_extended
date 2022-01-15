@@ -10,7 +10,7 @@ https://youtu.be/gSbswjLxbUg
 
 ### Folgende BlTouch Modelle funktionieren (getestet):
 
-Günstige Variante*: https://amzn.to/3tdm6nM
+Günstige Variante*: https://amzn.to/3tdm6nM (funktioniert oft nur mit Displayvariante)
 
 Premium Variante*: https://amzn.to/3zwgy9i
 

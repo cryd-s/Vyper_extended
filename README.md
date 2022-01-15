@@ -11,7 +11,7 @@ Link:
 #### Discord: https://discord.gg/xnm6GsynGk
 
 
-## Timelapse installation:
+## Timelapse Installation:
 
 Connect via Putty to the pi and then do following commands:
 

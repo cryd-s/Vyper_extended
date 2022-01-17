@@ -5,7 +5,7 @@ This is a dark-mode theme vyper for mainsail
 :root {
     --Primary:        #282a36;    /*Voron:Black*/
     --Secondary:      #ff5555;    /*Voron:Red*/
-    --c_blue:         #00eafb;    /*cryd_blue*/
+    --c_color:         #00eafb;    /*cryd_color*/
     --c_gray:         #2b2b2b;    /*cryd:grey*/
     --Blue:           #00eafb; 
     --Red:            #ff5555;
@@ -26,27 +26,27 @@ This is a dark-mode theme vyper for mainsail
 }
 
 .v-application .warning {
-    background-color: var(--c_blue) !important;
-    border-color: var(--c_blue);
+    background-color: var(--c_color) !important;
+    border-color: var(--c_color);
 }
 
 .v-application .primary {
     background-color: var(--c_grey) !important;
-    border-color: var(--c_blue) !important;
+    border-color: var(--c_color) !important;
 }
 
 .v-application .success--text {
-    color: var(--c_blue) !important;
-    caret-color: var(--c_blue) !important;
+    color: var(--c_color) !important;
+    caret-color: var(--c_color) !important;
 }
 
 .v-application .primary--text {
-    color: var(--c_blue) !important;
-    caret-color: var(--c_blue) !important;
+    color: var(--c_color) !important;
+    caret-color: var(--c_color) !important;
 }
 
 .v-application a {
-    color: var(--c_blue);
+    color: var(--c_color);
 }
 
  .v-btn:not(.v-btn--outlined).warning {
@@ -58,21 +58,21 @@ This is a dark-mode theme vyper for mainsail
 }
 
 .v-application .text-body-2, .v-application .text-button {
-    color: var(--c_blue);
+    color: var(--c_color);
 }
 
 .v-progress-circular__overlay .v-card__text {
-    stroke: var(--c_blue) !important;
+    stroke: var(--c_color) !important;
 }
 
 .v-slider__track-fill.primary {
-    background-color: var(--c_blue) !important;
-    border-color: var(--c_blue) !important;
+    background-color: var(--c_color) !important;
+    border-color: var(--c_color) !important;
 }
 
 .v-slider__thumb.primary {
-    background-color: var(--c_blue) !important;
-    border-color: var(--c_blue) !important;
+    background-color: var(--c_color) !important;
+    border-color: var(--c_color) !important;
 }
 
 /*

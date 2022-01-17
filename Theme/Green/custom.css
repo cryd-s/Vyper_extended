@@ -5,7 +5,7 @@ This is a dark-mode theme vyper for mainsail
 :root {
     --Primary:        #282a36;    /*Voron:Black*/
     --Secondary:      #ff5555;    /*Voron:Red*/
-    --c_green:        #50FF00;    /*cryd_green*/
+    --c_color:        #50FF00;    /*cryd_color*/
     --c_gray:         #2b2b2b;    /*cryd:grey*/
     --Blue:           #00eafb; 
     --Red:            #ff5555;
@@ -21,32 +21,32 @@ This is a dark-mode theme vyper for mainsail
 #nav-header .v-toolbar__title {
     font-size: 24px;
     vertical-align: middle;
-    color: c_green;
+    color: c_color;
     font-family: monospace;
 }
 
 .v-application .warning {
-    background-color: var(--c_green) !important;
-    border-color: var(--c_green);
+    background-color: var(--c_color) !important;
+    border-color: var(--c_color);
 }
 
 .v-application .primary {
     background-color: var(--c_grey) !important;
-    border-color: var(--c_green) !important;
+    border-color: var(--c_color) !important;
 }
 
 .v-application .success--text {
-    color: var(--c_green) !important;
-    caret-color: var(--c_green) !important;
+    color: var(--c_color) !important;
+    caret-color: var(--c_color) !important;
 }
 
 .v-application .primary--text {
-    color: var(--c_green) !important;
-    caret-color: var(--c_green) !important;
+    color: var(--c_color) !important;
+    caret-color: var(--c_color) !important;
 }
 
 .v-application a {
-    color: var(--c_green);
+    color: var(--c_color);
 }
 
  .v-btn:not(.v-btn--outlined).warning {
@@ -58,21 +58,21 @@ This is a dark-mode theme vyper for mainsail
 }
 
 .v-application .text-body-2, .v-application .text-button {
-    color: var(--c_green);
+    color: var(--c_color);
 }
 
 .v-progress-circular__overlay .v-card__text {
-    stroke: var(--c_green) !important;
+    stroke: var(--c_color) !important;
 }
 
 .v-slider__track-fill.primary {
-    background-color: var(--c_green) !important;
-    border-color: var(--c_green) !important;
+    background-color: var(--c_color) !important;
+    border-color: var(--c_color) !important;
 }
 
 .v-slider__thumb.primary {
-    background-color: var(--c_green) !important;
-    border-color: var(--c_green) !important;
+    background-color: var(--c_color) !important;
+    border-color: var(--c_color) !important;
 }
 
 /*

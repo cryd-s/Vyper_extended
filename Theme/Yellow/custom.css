@@ -5,7 +5,7 @@ This is a dark-mode theme vyper for mainsail
 :root {
     --Primary:        #282a36;    /*Voron:Black*/
     --Secondary:      #ff5555;    /*Voron:Red*/
-    --c_color:         #ff0000;    /*cryd_color*/
+    --c_color:        #fffc00;    /*cryd_color*/
     --c_gray:         #2b2b2b;    /*cryd:grey*/
     --Blue:           #00eafb; 
     --Red:            #ff5555;

@@ -21,6 +21,8 @@ Connect via Putty to the pi and then do following commands:
 
 >bash ~/moonraker-timelapse/install.sh
 
+>uncomment the #timelapse.cfg in the printer.cfg (3. Line)
+
 ## Pressure Advance
 
 https://www.klipper3d.org/Pressure_Advance.html

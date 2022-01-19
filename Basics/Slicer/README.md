@@ -7,7 +7,7 @@ https://github.com/supermerill/SuperSlicer/releases
 <br>
 </br>
 
-<u>Superslicer Sprach update (Alphatest)</u>
+<u>Superslicer German update (Alphatest)</u>
 <br>
 </br>
 - Download "SuperSlicer.mo

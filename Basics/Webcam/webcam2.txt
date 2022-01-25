@@ -21,7 +21,7 @@ camera="usb"
 #
 # Defaults to a resolution of 640x480 px and a framerate of 10 fps
 # -----> EDIT THIS PATH
-camera_usb_options="-r 1920x1080 -f 30 -d /dev/video0"
+camera_usb_options="-r 1920x1080 -f 30 -d /dev/video2"
 #camera_usb_options="-r 1920x1080 -f 30 -d /dev/v4l/by-id/usb-GENERAL_GENERAL_WEBCAM_JH0319_20210727_v017-video-index1"
 
 ### Additional webcam devices known to cause problems with -f
@@ -73,7 +73,7 @@ camera_usb_options="-r 1920x1080 -f 30 -d /dev/video0"
 #camera_http_options="-n"
 
 #camera_http_webroot="./www"
-camera_http_options="-p 8080"
+camera_http_options="-p 8081"
 
 ### EXPERIMENTAL
 # Support for different streamer types.

@@ -13,6 +13,13 @@ v4l2-ctl --list-devices
 v4l2-ctl --list-ctrls --device /path/to/video_device  
 (*Zeig alle verfügbaren Befehle eines Gerätes an*)
 
+### <u>Kamera Befehle: </u> 
+lsusb  
+(*Zeig alle verfügbaren USB Geräte an*)
+
+### <u>Mainsail Multicam Dokumentation: </u> 
+https://docs.mainsail.xyz/quicktips/multicam
+
 ### <u>Android App: </u>  
 https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_US&gl=US
 

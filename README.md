@@ -21,7 +21,12 @@ Connect via Putty to the pi and then do following commands:
 
 >bash ~/moonraker-timelapse/install.sh
 
->uncomment the #timelapse.cfg in the printer.cfg (3. Line)
+uncomment the #timelapse.cfg in the printer.cfg (3. Line)
+If you have some trouble to connect to Mainsail then use this command:
+
+>./scripts/install-moonraker.sh -r -f -c ~/klipper_config/moonraker.conf -l ~/klipper_logs/moonraker.log
+
+
 
 ## Pressure Advance
 

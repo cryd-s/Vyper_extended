@@ -58,7 +58,6 @@ cd kiauh
   
 ### <u>Sonstige Befehle</u>  
   
-
 Serielle Geräte finden:
 ```
 dmesg | grep tty

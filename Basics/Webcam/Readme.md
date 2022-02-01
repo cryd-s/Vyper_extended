@@ -7,14 +7,19 @@
 https://www.mankier.com/1/v4l2-ctl#
 
 ### <u>v412 Befehle: </u>  
+```
 v4l2-ctl --list-devices   
+```
 (*Zeig alle verfügbaren Kamerageräte an*)  
-
-v4l2-ctl --list-ctrls --device /path/to/video_device  
+```
+v4l2-ctl --list-ctrls --device /path/to/video_device 
+``` 
 (*Zeig alle verfügbaren Befehle eines Gerätes an*)
 
 ### <u>Kamera Befehle: </u> 
+```
 lsusb  
+```
 (*Zeig alle verfügbaren USB Geräte an*)
 
 ### <u>Mainsail Multicam Dokumentation: </u> 

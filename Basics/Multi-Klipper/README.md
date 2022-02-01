@@ -58,11 +58,6 @@ cd kiauh
   
 ### <u>Sonstige Befehle</u>  
   
-Benötignte Programme:
-```
-sudo apt install lsusb
-```
-
 Serielle Geräte finden:
 ```
 dmesg | grep tty

@@ -60,7 +60,7 @@ cd kiauh
   
 Benötignte Programme:
 ```
-sudo apt install lsubs
+sudo apt install lsusb
 ```
 
 Serielle Geräte finden:

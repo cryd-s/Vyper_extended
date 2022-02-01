@@ -1,17 +1,17 @@
-# Basics - Multiklipper  
+# Basics - Multiklipper
    
-### <u>Mainsail Image runterladen</u>  
-- https://docs.mainsail.xyz/setup/mainsailos/pi-imager 
+### <u>RaspiOS Image runterladen</u>  
+- https://www.raspberrypi.com/software/operating-systems/
   
   
 ### <u>Imager runterladen</u>  
   
 - https://www.raspberrypi.org/downloads.../
 
-### <u>Image auf SD Karte spielen</u> 
+### Image auf SD Karte spielen
  - Eigenes Image auswählen
  - Passenden SD Karte
- - STRG+Shift+X für erweiterte Einstellungen
+ - STRG+Shift+X für erweiterente Einstellungen
 
 
 ### <u>SSH aktivieren</u>  

@@ -24,22 +24,51 @@
 
 ### <u>Updaten</u>  
   
+
 ```
-sudo apt get update  
-sudo apt get upgrade  
-sudo reboot  
+sudo apt get update
+``` 
 ```
+sudo apt get upgrade
+```  
+```
+sudo reboot
+```    
+
 
 ### <u>KIAUH installieren</u>
 ```
+sudo apt install git
+```
+```
 mkdir /home/pi/Github
+```
+```
 cd /home/pi/Github
+```
+```
 git clone https://github.com/th33xitus/kiauh.git 
+```
+```
 cd kiauh
+```
+```
 ./kiauh.sh
 ```
   
-### <u>Klipper installieren</u>  
+### <u>Sonstige Befehle</u>  
   
+Benötignte Programme:
+```
+sudo apt install lsubs
+```
 
-### <u>Moonraker installieren</u>  
+Serielle Geräte finden:
+```
+dmesg | grep tty
+```
+
+USB Geräte auflisten:
+```
+lsusb
+```

@@ -72,3 +72,8 @@ USB Geräte auflisten:
 ```
 lsusb
 ```
+
+Videogeräte auflisten:
+```
+v4l2-ctl --list-devices   
+```

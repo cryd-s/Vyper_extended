@@ -41,7 +41,7 @@ sudo reboot
 sudo apt install git
 ```
 ```
-mkdir /home/pi/Github
+mkdir -p /home/pi/Github
 ```
 ```
 cd /home/pi/Github

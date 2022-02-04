@@ -30,3 +30,32 @@ https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_US&gl=US
 
 ### <u>Iphone App: </u>  
 https://apps.apple.com/us/app/droidcam-webcam-obs-camera/id1510258102
+
+## **Advanced Makro Buttons**
+
+### <u>KIAUH installieren</u>  
+  
+```
+sudo apt install git
+```
+```
+mkdir -p /home/pi/Github
+```
+```
+cd /home/pi/Github
+```
+```
+git clone https://github.com/th33xitus/kiauh.git 
+```
+```
+cd kiauh
+```
+```
+./kiauh.sh
+```
+
+### <u>Shell_Commander in printer.cfg/u> 
+
+```
+[include shell_command.cfg]
+```

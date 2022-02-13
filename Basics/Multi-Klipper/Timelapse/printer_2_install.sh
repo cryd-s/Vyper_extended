@@ -26,7 +26,7 @@ SRCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )"/ && pwd )"
 # Default Parameters
 MOONRAKER_TARGET_DIR="${HOME}/moonraker/moonraker/components"
 SYSTEMDDIR="/etc/systemd/system"
-KLIPPER_CONFIG_DIR="${HOME}/klipper_config/printer_1"
+KLIPPER_CONFIG_DIR="${HOME}/klipper_config/printer_2"
 FFMPEG_BIN="/usr/bin/ffmpeg"
 
 # Define text colors
@@ -36,7 +36,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 function stop_klipper {
-    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F "klipper-1.service")" ]; then
+    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F "klipper-2.service")" ]; then
         echo "Klipper service found! Stopping during Install."
         sudo systemctl stop klipper-2
     else
@@ -46,7 +46,7 @@ function stop_klipper {
 }
 
 function stop_moonraker {
-    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F "moonraker-1.service")" ]; then
+    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F "moonraker-2.service")" ]; then
         echo "Moonraker service found! Stopping during Install."
         sudo systemctl stop moonraker-2
     else

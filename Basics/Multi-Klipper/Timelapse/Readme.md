@@ -12,7 +12,7 @@ mkdir -p /tmp/timelapse2
 ```
 Timelapse Video Verzeichnigs anlegen  
 ```  
-/home/pi/gcode_files/Timelapse/
+mkdir -p /home/pi/gcode_files/Timelapse/
 ```  
 
 ### <u>Install.sh implementieren:</u> 

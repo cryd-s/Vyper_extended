@@ -111,10 +111,10 @@ gcode:
     RUN_SHELL_COMMAND CMD=script_netbck_activate
 ```
 ```
-[gcode_shell_command backup_network_backup]
+[gcode_shell_command script_backup_network_backup]
 command: bash /home/pi/klipper_config/Scripts/network_backup.sh
 verbose: True
-[gcode_macro Backup_Network]
+[gcode_macro SCRIPT_Backup_Network]
 gcode:
-    RUN_SHELL_COMMAND CMD=backup_network_backup
+    RUN_SHELL_COMMAND CMD=script_backup_network_backup
 ```

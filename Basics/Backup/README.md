@@ -65,7 +65,7 @@ password=<passwort>
 sudo nano /etc/fstab
 ```
 ```
-//<IP>/<Pfad> /mnt/backup cifs uid=pi,credentials=/home/pi/.smb/credentials.txt 0 0
+//<IP>/<Pfad> /mnt/backup_fritz cifs uid=pi,credentials=/home/pi/.smb/credentials_fritz.txt 0 0
 ```
 _Beispiel:_    
 - //192.168.178.1/fritz.nas/USB-SanDisk3-2Gen1-01/klipper_backup /mnt/backup_fritz cifs uid=pi,credentials=/home/pi/.smb/credentials_fritz.txt 0 0  

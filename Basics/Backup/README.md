@@ -76,7 +76,7 @@ _Beispiel:_
 sudo nano /etc/crontab
 ```
 ```
-30 02   * * *   pi      /bin/bash /home/pi/klipper_config/printer_2/scripts/backup.sh
+30 02   * * *   pi      /bin/bash /home/pi/klipper_config/Scripts/networt_backup.sh
 ```
 
 ### <u>KIAUH installieren</u>

@@ -78,7 +78,9 @@ sudo nano /etc/crontab
 ```
 30 02   * * *   pi      /bin/bash /home/pi/klipper_config/Scripts/network_backup.sh
 ```
-
+```
+sbin/service cron restart
+```
 ### <u>KIAUH installieren</u>
 ```
 sudo apt install git

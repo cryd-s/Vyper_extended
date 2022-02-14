@@ -32,13 +32,13 @@ git clone https://github.com/cryd-s/Vyper_extended.git
 mkdir -p /home/pi/klipper_config/Scripts
 ```
 ```
-git clone /home/pi/Github/Vyper_extended/Scripts/* /home/pi/klipper_config/Scripts
+cp /home/pi/Github/Vyper_extended/Scripts/* /home/pi/klipper_config/Scripts
 ```  
   
 ### <u>Scripte ausführbar machen</u>  
   
 ```
-chmod +x /home/pi/Github/Vyper_extended/Scripts/*.sh
+chmod +x /home/pi/klipper_config/Scripts/*
 ```
 
 ### <u>Netzwerkordner einbinden</u> 

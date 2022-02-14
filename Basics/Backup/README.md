@@ -104,7 +104,7 @@ cd kiauh
 ### <u>Activation Makro</u>
 ```
 [gcode_shell_command script_netbck_activate]
-command: /usr/bin/chmod +x /home/pi/klipper_config/network_backup.sh
+command: /usr/bin/chmod +x /home/pi/klipper_config/Scripts/network_backup.sh
 verbose: True
 [gcode_macro SCRIPT_ACTIVATE_Network_Backup]
 gcode:
@@ -112,7 +112,7 @@ gcode:
 ```
 ```
 [gcode_shell_command backup_network_backup]
-command: bash /home/pi/klipper_config/network_backup.sh
+command: bash /home/pi/klipper_config/Scripts/network_backup.sh
 verbose: True
 [gcode_macro Backup_Network]
 gcode:

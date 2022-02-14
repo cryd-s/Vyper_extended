@@ -76,9 +76,11 @@ _Beispiel:_
 sudo nano /etc/crontab
 ```
 ```
-30 02   * * *   pi      /bin/bash /home/pi/klipper_config/printer_2/scripts/backup.sh
+30 02   * * *   pi      /bin/bash /home/pi/klipper_config/Scripts/network_backup.sh
 ```
-
+```
+sbin/service cron restart
+```
 ### <u>KIAUH installieren</u>
 ```
 sudo apt install git
@@ -100,11 +102,19 @@ cd kiauh
 ```
   
 ### <u>Activation Makro</u>
-
-[gcode_shell_command scrpits_activate_backup]
-command: /usr/bin/chmod +x /home/pi/klipper_config/Scripts/backup.sh
+```
+[gcode_shell_command script_netbck_activate]
+command: /usr/bin/chmod +x /home/pi/klipper_config/Scripts/network_backup.sh
 verbose: True
-[gcode_macro SCRIPTS_ACTIVATE_BACKUP]
+[gcode_macro SCRIPT_ACTIVATE_Network_Backup]
 gcode:
-    RUN_SHELL_COMMAND CMD=scrpits_activate_backup
-
+    RUN_SHELL_COMMAND CMD=script_netbck_activate
+```
+```
+[gcode_shell_command script_backup_network_backup]
+command: bash /home/pi/klipper_config/Scripts/network_backup.sh
+verbose: True
+[gcode_macro SCRIPT_Backup_Network]
+gcode:
+    RUN_SHELL_COMMAND CMD=script_backup_network_backup
+```

@@ -76,7 +76,7 @@ _Beispiel:_
 sudo nano /etc/crontab
 ```
 ```
-30 02   * * *   pi      /bin/bash /home/pi/klipper_config/Scripts/networt_backup.sh
+30 02   * * *   pi      /bin/bash /home/pi/klipper_config/Scripts/network_backup.sh
 ```
 
 ### <u>KIAUH installieren</u>
@@ -102,7 +102,7 @@ cd kiauh
 ### <u>Activation Makro</u>
 
 [gcode_shell_command scrpits_activate_backup]
-command: /usr/bin/chmod +x /home/pi/klipper_config/Scripts/backup.sh
+command: /usr/bin/chmod +x /home/pi/klipper_config/Scripts/network_backup.sh
 verbose: True
 [gcode_macro SCRIPTS_ACTIVATE_BACKUP]
 gcode:

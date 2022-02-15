@@ -59,3 +59,6 @@ port = Port (Sollte sich von den anderen Webcams unterscheiden; keine Doppelbele
 device = Kamera "Port" (über "v4l2-ctl --list-devices" rausfinden )  
 resolution = Auflösung (1920x1080; 1280x720)  
 max_fps= maximale FPS*
+
+
+by Robnex

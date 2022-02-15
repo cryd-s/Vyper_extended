@@ -52,7 +52,7 @@ device: /dev/video0
 resolution: 1920x1080
 max_fps: 25
 ```
-  
+
 *[cam 1] = Kamera zuordnung (Bitte immer nur die Zahl aufsteigend ändern)  
 stream = Streamer service; ustreamer oder rtsp kann ausgewählt werden  
 port = Port (Sollte sich von den anderen Webcams unterscheiden; keine Doppelbelegung)  
@@ -60,4 +60,23 @@ device = Kamera "Port" (über "v4l2-ctl --list-devices" rausfinden )
 resolution = Auflösung (1920x1080; 1280x720)  
 max_fps= maximale FPS*
 
+### <u>**Befehle**</u>
 
+```
+v4l2-ctl --list-devices   
+```
+```
+v4l2-ctl --list-ctrls   
+```
+
+### <u>**Beispiel**</u>
+```
+[cam 1]
+streamer: ustreamer                     # ustreamer/rtsp
+port: 8080                              # Port
+device: /dev/video0                     # See Log for available ...
+resolution: 1280x720                   # widthxheight format
+max_fps: 30                             # If Hardware Supports this it will be forced, ohterwise ignored/coerced.
+#custom_flags:                          # You can run the Stream Services with custom flags.
+v4l2ctl: focus_auto=0,focus_absolute=30
+```

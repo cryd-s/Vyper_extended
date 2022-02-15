@@ -61,4 +61,3 @@ resolution = Auflösung (1920x1080; 1280x720)
 max_fps= maximale FPS*
 
 
-by Robnex

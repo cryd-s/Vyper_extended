@@ -68,7 +68,9 @@ v4l2-ctl --list-devices
 ```
 v4l2-ctl --list-ctrls   
 ```
-
+```
+v4l2-ctl --set-ctrl=focus_auto=0 
+```
 ### <u>**Beispiel**</u>
 ```
 [cam 1]

@@ -46,7 +46,7 @@ chmod +x /home/pi/klipper_config/Scripts/*
 sudo mkdir /mnt/backup_fritz
 ```
 ```
-sudo sudo chgrp pi /mnt/backup_fritz && sudo chown pi /mnt/backup_fritz
+sudo chgrp pi /mnt/backup_fritz && sudo chown pi /mnt/backup_fritz
 ```
 ```
 mkdir -p ~/.smb

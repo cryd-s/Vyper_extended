@@ -88,34 +88,6 @@ if [ "$Local" = "True" ];
     echo "No Local Backup Selected! Skipping backup ..."
 fi
 
-
-#backup_printer_cfg
-#  if [ -f $PRINTER_CFG ]; then
-#    echo "Timestamp: "$(date)""
-#    echo "--------------"
-#    echo "Create backup of printer.cfg ..."
-#    rsync -avH $PRINTER_CFG $BACKUP_DIR_HOME/printer.cfg.$(date +'%Y-%m-%d-%H-%M').backup
-#    rsync -avH $PRINTER_CFG $BACKUP_DIR_NET/printer.cfg.$(date +'%Y-%m-%d-%H-%M') && echo -e "Backup complete!"
-#  else
-#    echo  "No printer.cfg found! Skipping backup ..."
-#  fi
-
-
-#backup_klipper_config_folder
-#  if [ -d "$klipper_cfg_loc" ]; then
-#    #echo "Timestamp:"$(date)""
-#    echo "-------------------------"
-#    echo "Create backup of the Klipper config directory ..."
-#    mkdir -p $BACKUP_DIR_HOME/klipper_config/$(date +'%Y-%m-%d-%H-%M')/
-#    cp -r $klipper_cfg_loc $BACKUP_DIR_HOME/klipper_config/$(date +'%Y-%m-%d-%H-%M')/ 
-#    rsync -vr $klipper_cfg_loc $BACKUP_DIR_NET/klipper_config_$(date +'%Y-%m-%d-%H-%M')/
-#    echo "Backup complete!"
-#    echo
-#  else
-#    echo "No config directory found! Skipping backup ..."
-#    echo
-#  fi
-
 echo "######################"
 echo "#Backup tool finished#"
 echo "######################"

@@ -17,7 +17,7 @@ git clone https://github.com/mainsail-crew/crowsnest.git
 cd crowsnest
 ```
 ```
-./install.sh
+make install
 ```
 
 ### <u>**Crownest deinstallieren**</u>
@@ -25,7 +25,7 @@ cd crowsnest
 cd ~/crowsnest
 ```
 ```
-./uninstall.sh
+make uninstall
 ```
 
 ### <u>**Moonraker.conf anpassen**</u>
@@ -46,7 +46,7 @@ log_path: ~/klipper_logs/webcamd.log
 log_level: quiet
 
 [cam 1]
-streamer: ustreamer
+mode: mjpg
 port: 8080
 device: /dev/video0
 resolution: 1920x1080
@@ -74,7 +74,7 @@ v4l2-ctl --set-ctrl=focus_auto=0
 ### <u>**Beispiel**</u>
 ```
 [cam 1]
-streamer: ustreamer                     # ustreamer/rtsp
+mode: mjpg                     # ustreamer/rtsp
 port: 8080                              # Port
 device: /dev/video0                     # See Log for available ...
 resolution: 1280x720                   # widthxheight format

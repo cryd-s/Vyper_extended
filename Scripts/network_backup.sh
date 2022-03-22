@@ -1,5 +1,5 @@
 # Cryd Network Backup Tool Version 5
-(Teamwork with realtonysoprano)
+#(Teamwork with realtonysoprano)
 
 #echo "#####################"
 echo "#Backup tool started#"
@@ -17,8 +17,8 @@ BackupRetention=7
 
 # variables
 #backup dirs for network storage
-BACKUP_NET_DIR_ROOT=/mnt/synology/klipper
-BACKUP_NET_DIR_CFG=/mnt/synology/klipper/backup_$(date +'%Y-%m-%d-%H')
+BACKUP_NET_DIR_ROOT=/mnt/backup_fritz/klipper
+BACKUP_NET_DIR_CFG=/mnt/backup_friz/klipper/backup_$(date +'%Y-%m-%d-%H')
 #bacup dirs for local storage
 BACKUP_HOME_DIR_ROOT=$HOME/backup/Vyper
 BACKUP_HOME_DIR_CFG=$HOME/backup/Vyper/backup_$(date +'%Y-%m-%d-%H')

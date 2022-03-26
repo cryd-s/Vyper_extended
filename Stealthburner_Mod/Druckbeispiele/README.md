@@ -2,7 +2,7 @@
 
 ### <u>Extrudr - Anthrazit (ASA)</u> 
  
-<p align="center">
+<p align="left">
   <img src="./Extrudr-Antrazit/Extrudr-Anthrazit-seitlich-rechts.jpg" width="350" title="Extrudr - Anthrazit">
 </p>
 

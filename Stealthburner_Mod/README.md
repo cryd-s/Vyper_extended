@@ -28,7 +28,7 @@ Beispiele der verschiedenen Druckfarben findet ihr im Ordner "Druckbeispiele".
 ### <u>Heatinserts</u>
 
 <p align="left">
-  <img src="./bilder/heatinserts.png" width="350" title="Heatinserts">
+  <img src="./bilder/heatinserts.png" width="650" title="Heatinserts">
 </p>
   
 

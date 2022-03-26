@@ -32,7 +32,7 @@ Beispiele der verschiedenen Druckfarben findet ihr im Ordner "Druckbeispiele".
 </p>  
   
   
-### <u>Heatinserts</u>  
+### <u>Stealthburner - Teile</u>  
   
   <p align="left">
   <img src="./bilder/Stealthbruner_Teile.png" width="950" title="Heatinserts">

@@ -24,6 +24,12 @@ https://www.prusaprinters.org/prints/139677-anycubic-vyper-stealthburner-mod
 ### <u>Druckfarben</u>  
   
 Beispiele der verschiedenen Druckfarben findet ihr im Ordner "Druckbeispiele".  
+
+### <u>Heatinserts</u>
+
+<p align="left">
+  <img src="./bilder/heatinserts.png" width="350" title="Heatinserts">
+</p>
   
 
 Bei Fragen gerne auf dem Discord vorbeischauen.  

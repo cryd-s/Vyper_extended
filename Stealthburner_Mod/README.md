@@ -28,14 +28,14 @@ Beispiele der verschiedenen Druckfarben findet ihr im Ordner "Druckbeispiele".
 ### <u>Heatinserts</u>
 
 <p align="left">
-  <img src="./bilder/heatinserts.png" width="350" title="Heatinserts">
+  <img src="./bilder/heatinserts.png" width="950" title="Heatinserts">
 </p>  
   
   
 ### <u>Heatinserts</u>  
   
   <p align="left">
-  <img src="./bilder/Stealthbruner_Teile.png" width="350" title="Heatinserts">
+  <img src="./bilder/Stealthbruner_Teile.png" width="950" title="Heatinserts">
 </p>
   
   

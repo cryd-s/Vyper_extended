@@ -3,7 +3,13 @@
 ### <u>Extrudr - Anthrazit (ASA)</u> 
  
 <p align="left">
-  <img src="./Extrudr-Antrazit/Extrudr-Anthrazit-seitlich-rechts.jpg" width="350" title="Extrudr - Anthrazit">
+  <img src="./Extrudr-Antrazit/Extrudr-Anthrazit-seitlich-rechts.jpg" width="500" title="Extrudr - Anthrazit">
+</p>
+
+### <u>Das Filament - Orange (PLA)</u> 
+ 
+<p align="left">
+  <img src="./Das_Filament/Das_Filament_orange_seite.jpg" width="500" title="Extrudr - Anthrazit">
 </p>
 
 Bei Fragen gerne auf dem Discord vorbeischauen.  

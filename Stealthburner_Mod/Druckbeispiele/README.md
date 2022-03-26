@@ -2,7 +2,7 @@
 
 ### <u>Extrudr - Anthrazit (ASA)</u> 
   
-![](Druckbeispiele/Extrudr-Antrazit/Extrudr-Anthrazit-seitlich-rechts.jpg)  
+![](Vyper_extended/Stealthburner_Mod/Druckbeispiele/Extrudr-Antrazit/Extrudr-Anthrazit-seitlich-rechts.jpg)  
   
   
 

@@ -10,7 +10,14 @@
  
 <p align="left">
   <img src="./Das_Filament/Das_Filament_orange_seite.jpg" width="500" title="Extrudr - Anthrazit">
-</p>
-
+</p>  
+  
+### <u>Extrudr-Smaragdgrün (ASA)</u> 
+ 
+<p align="left">
+  <img src="./Das_Filament/Extrudr-Smaragdgrün-seitlich-rechts.jpg" width="500" title="Extrudr - Anthrazit">
+</p> 
+  
+  
 Bei Fragen gerne auf dem Discord vorbeischauen.  
 https://discord.gg/Nf7FXuk8

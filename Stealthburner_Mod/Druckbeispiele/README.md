@@ -15,7 +15,7 @@
 ### <u>Extrudr-Smaragdgrün (ASA)</u> 
  
 <p align="left">
-  <img src="./Das_Filament/Extrudr-Smaragdgrün-seitlich-rechts.jpg" width="500" title="Extrudr - Anthrazit">
+  <img src="./Extrudr-Smaragdgrün/Extrudr-Smaragdgrün-seitlich-rechts.jpg" width="500" title="Extrudr - Anthrazit">
 </p> 
   
   

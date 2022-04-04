@@ -1,3 +1,4 @@
+#!/bin/bash
 # Cryd Network Backup Tool Version 5
 #(Teamwork with realtonysoprano)
 

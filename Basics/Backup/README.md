@@ -6,7 +6,7 @@
   
 ### <u>FritzNAS Ordner anlegen</u>
 - FitzBox-Nas anklicken und auf USB Stick verbinden
-- Ornder "klipper_Backup" anlegen
+- Ordner "klipper_backup" anlegen
 
 ### <u>Windows mit Ordner verbinden</u>
   - Windowstaste + \\<IP> (Benutzer+Kennwort eingeben)
@@ -60,16 +60,18 @@ password=<passwort>
 ### <u>Ordner beim Neustart automatisch einbinden</u> 
 
 ```
-sudo echo "//<IP>/<Pfad> /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" >> /etc/fstab | sudo tee -a /etc/fstab
+
+echo "//<IP>/<Pfad> /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" | sudo tee -a /etc/fstab >/dev/null
 ```
 
 _Beispiel:_    
-- sudo echo "//192.168.178.1/fritz.nas/USB-SanDisk3-2Gen1-01/klipper_backup /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" | sudo tee -a /etc/fstab
+- echo "//192.168.178.1/fritz.nas/USB-SanDisk3-2Gen1-01/klipper_backup /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" | sudo tee -a /etc/fstab >/dev/null
+
   
 ### <u>Backup Zeit einstellen</u> 
 
 ```
-sudo crontab -e
+crontab -e
 ```
 
 ```

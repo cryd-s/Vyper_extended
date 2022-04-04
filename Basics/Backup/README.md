@@ -1,8 +1,8 @@
-# Basics - Automatisches Backup  
+# Basics - Automatisches Backup-Script mit FritzNAS
   
 ### <u>Fritzbox Benutzer anlegen</u>
 - Auf Fritzbox-Oberfläche einloggen
-- System/FRITZ!Box-Benutzer anlegen (Zugang zu NAS INhalten, alle Lesen und Schreiben) 
+- System/FRITZ!Box-Benutzer anlegen (Zugang zu NAS Inhalten, alle Lesen und Schreiben) 
   
 ### <u>FritzNAS Ordner anlegen</u>
 - FitzBox-Nas anklicken und auf USB Stick verbinden
@@ -19,20 +19,13 @@
 ```
 sudo apt install git
 ```
+
 ```
-mkdir -p /home/pi/Github
-```
-```
-cd /home/pi/Github
-```
-```
-git clone https://github.com/cryd-s/Vyper_extended.git  
+git clone https://github.com/cryd-s/Vyper_extended.git vyper_extended 
 ```  
+
 ```
-mkdir -p /home/pi/klipper_config/Scripts
-```
-```
-cp /home/pi/Github/Vyper_extended/Scripts/* /home/pi/klipper_config/Scripts
+cp -R /home/pi/vyper_extended/Scripts /home/pi/klipper_config/
 ```  
   
 ### <u>Scripte ausführbar machen</u>  
@@ -41,67 +34,68 @@ cp /home/pi/Github/Vyper_extended/Scripts/* /home/pi/klipper_config/Scripts
 chmod +x /home/pi/klipper_config/Scripts/*
 ```
 
-### <u>Netzwerkordner einbinden</u> 
+### <u>Mount vorbereiten</u> 
+
 ```
 sudo mkdir /mnt/backup_fritz
 ```
+
 ```
-sudo chgrp pi /mnt/backup_fritz && sudo chown pi /mnt/backup_fritz
+sudo chown pi:pi /mnt/backup_fritz
 ```
+
 ```
-mkdir -p ~/.smb
+mkdir ~/.smb
 ```
+
 ```
 nano ~/.smb/credentials_fritz.txt
 ```
+
 ```
 user=<benutzername>
 password=<passwort>
 ```
 
-### <u>Ornder beim Neustart automatisch einbinden</u> 
+### <u>Ordner beim Neustart automatisch einbinden</u> 
 
 ```
-sudo nano /etc/fstab
+sudo echo "//<IP>/<Pfad> /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" >> /etc/fstab
 ```
-```
-//<IP>/<Pfad> /mnt/backup_fritz cifs uid=pi,credentials=/home/pi/.smb/credentials_fritz.txt 0 0
-```
+
 _Beispiel:_    
-- //192.168.178.1/fritz.nas/USB-SanDisk3-2Gen1-01/klipper_backup /mnt/backup_fritz cifs uid=pi,credentials=/home/pi/.smb/credentials_fritz.txt 0 0  
+- sudo echo "//192.168.178.1/fritz.nas/USB-SanDisk3-2Gen1-01/klipper_backup /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" >> /etc/fstab
   
 ### <u>Backup Zeit einstellen</u> 
 
 ```
-sudo nano /etc/crontab
+sudo crontab -e
 ```
+
 ```
-30 02   * * *   pi      /bin/bash /home/pi/klipper_config/Scripts/network_backup.sh
+30 02 * * * /home/pi/klipper_config/Scripts/network_backup.sh
 ```
-```
-sudo service cron restart
-```
+
 ### <u>KIAUH installieren</u>
+
 ```
 sudo apt install git
 ```
-```
-mkdir -p /home/pi/Github
-```
-```
-cd /home/pi/Github
-```
+
 ```
 git clone https://github.com/th33xitus/kiauh.git 
 ```
+
 ```
 cd kiauh
 ```
+
 ```
 ./kiauh.sh
 ```
   
 ### <u>Activation Makro</u>
+
 ```
 [gcode_shell_command script_netbck_activate]
 command: /usr/bin/chmod +x /home/pi/klipper_config/Scripts/network_backup.sh
@@ -110,6 +104,7 @@ verbose: True
 gcode:
     RUN_SHELL_COMMAND CMD=script_netbck_activate
 ```
+
 ```
 [gcode_shell_command script_backup_network_backup]
 command: bash /home/pi/klipper_config/Scripts/network_backup.sh
@@ -118,3 +113,4 @@ verbose: True
 gcode:
     RUN_SHELL_COMMAND CMD=script_backup_network_backup
 ```
+

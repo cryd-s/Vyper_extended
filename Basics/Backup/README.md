@@ -60,11 +60,13 @@ password=<passwort>
 ### <u>Ordner beim Neustart automatisch einbinden</u> 
 
 ```
+
 echo "//<IP>/<Pfad> /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" | sudo tee -a /etc/fstab >/dev/null
 ```
 
 _Beispiel:_    
 - echo "//192.168.178.1/fritz.nas/USB-SanDisk3-2Gen1-01/klipper_backup /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" | sudo tee -a /etc/fstab >/dev/null
+
   
 ### <u>Backup Zeit einstellen</u> 
 

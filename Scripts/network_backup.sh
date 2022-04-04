@@ -1,6 +1,6 @@
 #!/bin/bash
-# Cryd Network Backup Tool Version 5
-#(Teamwork with realtonysoprano)
+# Cryd Network Backup Tool Version 2
+#(Teamwork with realtonysoprano & LeAnon)
 
 #echo "#####################"
 echo "#Backup tool started#"

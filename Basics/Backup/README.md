@@ -6,7 +6,7 @@
   
 ### <u>FritzNAS Ordner anlegen</u>
 - FitzBox-Nas anklicken und auf USB Stick verbinden
-- Ornder "klipper_Backup" anlegen
+- Ordner "klipper_backup" anlegen
 
 ### <u>Windows mit Ordner verbinden</u>
   - Windowstaste + \\<IP> (Benutzer+Kennwort eingeben)

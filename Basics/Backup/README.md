@@ -60,7 +60,7 @@ password=<passwort>
 ### <u>Ordner beim Neustart automatisch einbinden</u> 
 
 ```
-sudo echo "//<IP>/<Pfad> /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" >> /etc/fstab
+echo "//<IP>/<Pfad> /mnt/backup_fritz cifs uid=$(id -u pi),gid=$(id -g pi),credentials=/home/pi/.smb/credentials_fritz.txt 0 0" | sudo tee -a /etc/fstab >/dev/null
 ```
 
 _Beispiel:_    

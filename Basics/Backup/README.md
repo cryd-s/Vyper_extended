@@ -69,7 +69,7 @@ _Beispiel:_
 ### <u>Backup Zeit einstellen</u> 
 
 ```
-sudo crontab -e
+crontab -e
 ```
 
 ```

@@ -19,10 +19,10 @@ BackupRetention=7
 # variables
 #backup dirs for network storage
 BACKUP_NET_DIR_ROOT=/mnt/backup_fritz/klipper
-BACKUP_NET_DIR_CFG=/mnt/backup_fritz/klipper/backup_$(date +'%Y-%m-%d-%H')
+BACKUP_NET_DIR_CFG=/mnt/backupfritz/klipper/backup$(date +'%Y-%m-%d')
 #bacup dirs for local storage
 BACKUP_HOME_DIR_ROOT=$HOME/backup/Vyper
-BACKUP_HOME_DIR_CFG=$HOME/backup/Vyper/backup_$(date +'%Y-%m-%d-%H')
+BACKUP_HOME_DIR_CFG=$HOME/backup/Vyper/backup_$(date +'%Y-%m-%d')
 #config dirs
 PRINTER_CFG=$HOME/klipper_config/printer.cfg
 KLIPPER_CFG_LOC=$HOME/klipper_config/

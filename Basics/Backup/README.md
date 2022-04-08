@@ -34,12 +34,12 @@ Wie auch für Klipper selber, gibt es für Portainer und Duplicati nun jeweils e
 - Portainer: Raspberry-IP:9000
 - Duplicati: Raspberry-IP:8200
 
-Portainer:
+<u>Portainer:</u>
 
 Nach Aufruf der Oberfläche, sucht euch einen Benutzernamen und Passwort aus und klickt auf "Create User".
 Klickt nun oben links auf "Home" und ihr seht relativ mittig, dass es das Environment "local" bereits gibt mit den 3 Containern Portainer, Watchtower und Duplicati die das Script vorbereitet hat.
 
-Duplicati:
+<u>Duplicati:</u>
 
 Nach Aufruf kommt die kleine Einblendung "First run setup". Ich persönlich nehme hier "No, my machine has only a single account". Wenn du hier ebenfalls eine Loginmaske haben möchtest, wählst du natürlich "Yes" und folgst den Anweisungen.
 Anschließend können wir unseren Backup-Task anlegen. "Sicherung Hinzufügen" - "Weiter" - Name und bei Bedarf Verschlüsselung - "Weiter" - euer Ziel "Speichertyp" - "Weiter" - "Quell-Daten" Computer/source/pi und entweder alles oder spezifisch die Konfigurationsordner auswählen - "Weiter" - "Zeitplan" ganz wie ihr wollt - "Weiter" - wichtig nun bei "Allgemeine Einstellungen" die "Sicherungsaufbewahrung" so einzustellen wie es auf das Ziel passt. Ich persönlich bin allgemein ein riesen Freund von "Intelligente Sicherungsaufbewahrung". Aber auch andere Optionen hätten hier durchaus Sinn, je nach dem wie oft ihr an euren Konfigurationen Anpassungen macht.

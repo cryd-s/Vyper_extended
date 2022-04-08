@@ -15,7 +15,7 @@ Wir:
 wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Scripts/setup_backupsystem.sh -P ~/scripts/
 ```
 
-### <u>Scripte ausführbar machen</u>  
+### <u>Script ausführbar machen</u>  
   
 ```
 chmod +x ~/scripts/setup_backupsystem.sh
@@ -58,7 +58,7 @@ sudo -i
 wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Scripts/image_backup.sh -P ~/scripts/
 ```
 
-### <u>Scripte ausführbar machen</u>  
+### <u>Script ausführbar machen</u>  
   
 ```
 chmod +x ~/scripts/image_backup.sh
@@ -130,7 +130,7 @@ https://en.wikipedia.org/wiki/Cron
 cd ~ && wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Scripts/network_backup.sh -P ~/scripts/
 ```
 
-### <u>Scripte ausführbar machen</u>  
+### <u>Script ausführbar machen</u>  
 
 ```
 chmod +x ~/scripts/network_backup.sh

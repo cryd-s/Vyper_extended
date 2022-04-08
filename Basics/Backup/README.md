@@ -31,8 +31,8 @@ chmod +x ~/scripts/setup_backupsystem.sh
 
 Wie auch für Klipper selber, gibt es für Portainer und Duplicati nun jeweils eine weitere Weboberfläche, die wir über entsprechende Ports erreichen.
 
-- Portainer: <Raspberry-IP>:9000
-- Duplicati: <Raspberry-IP>:8200
+- Portainer: Raspberry-IP:9000
+- Duplicati: Raspberry-IP:8200
 
 Portainer:
 

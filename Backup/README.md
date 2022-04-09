@@ -12,7 +12,7 @@ Wir:
 ### <u>Setup Script laden</u>    
 
 ```
-wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Scripts/setup_backupsystem.sh -P ~/scripts/
+wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Backup/setup_backupsystem.sh -P ~/scripts/
 ```
 
 ### <u>Script ausführbar machen</u>  
@@ -56,7 +56,7 @@ sudo -i
 ### <u>Backup Script laden</u>    
       
 ```
-wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Scripts/image_backup.sh -P ~/scripts/
+wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Backup/image_backup.sh -P ~/scripts/
 ```
 
 ### <u>Script ausführbar machen</u>  
@@ -128,7 +128,7 @@ https://en.wikipedia.org/wiki/Cron
 ### <u>Backup Script laden</u>    
 
 ```
-cd ~ && wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Scripts/network_backup.sh -P ~/scripts/
+cd ~ && wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Backup/network_backup.sh -P ~/scripts/
 ```
 
 ### <u>Script ausführbar machen</u>  

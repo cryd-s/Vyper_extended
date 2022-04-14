@@ -27,7 +27,7 @@
   ### <u>Esun-Hellblau (ABS)</u> 
   
 <p align="left">
-  <img src="./Esun_hellblau/Esun_hellblau_seitlich_links.jpg" width="500" title="Extrudr - Anthrazit">
+  <img src="./Esun_hellblau/Esun_hellblau_seitlich_rechts.jpg" width="500" title="Extrudr - Anthrazit">
 </p> 
   
 ### <u>Smartfill-Schwarz (ASA)</u> 

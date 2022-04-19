@@ -41,6 +41,12 @@
 <p align="left">
   <img src="./Smartfill_Schwarz/Smartfill_schwarz_seitlich_rechts.jpg" width="500" title="Extrudr - Anthrazit">
 </p> 
+
+### <u>Esun-Grau (ABS)</u> 
+  
+<p align="left">
+  <img src="./Esun_grau/Esun_grau_seitlich_rechts.jpg" width="500" title="Esun - Grau">
+</p> 
   
 
 Bei Fragen gerne auf dem Discord vorbeischauen.  

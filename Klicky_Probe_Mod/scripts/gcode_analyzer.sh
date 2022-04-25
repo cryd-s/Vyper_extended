@@ -1,4 +1,4 @@
-##!/bin/bash
+#!/bin/bash
 # Version 4
 # Set variables your Variables
 

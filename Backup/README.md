@@ -1,6 +1,6 @@
-# Basics - Backups
+# Verschiedene Backup Möglichkeiten
 
-## Basics - Automatisches Backupsystem und Verwaltung mit Web-UI auf diverse Zielsysteme wie NAS, S3, Cloudstorage, SFTP, WebDAV etc
+## AKTUELL - Automatisches Backupsystem und Verwaltung mit Web-UI auf diverse Zielsysteme wie Google Drive, Dropbox, NAS, SFTP, WebDAV und weitere
 
 Wir:
 - installieren Docker und docker-compose zur Verwaltung der Applikationen
@@ -45,7 +45,7 @@ Klickt nun oben links auf "Home" und ihr seht relativ mittig, dass es das Enviro
 Nach Aufruf kommt die kleine Einblendung "First run setup". Ich persönlich nehme hier "No, my machine has only a single account". Wenn du hier ebenfalls eine Loginmaske haben möchtest, wählst du natürlich "Yes" und folgst den Anweisungen.
 Anschließend können wir unseren Backup-Task anlegen. "Sicherung Hinzufügen" - "Weiter" - Name und bei Bedarf Verschlüsselung - "Weiter" - euer Ziel "Speichertyp" - "Weiter" - "Quell-Daten" Computer/source/pi und entweder alles oder spezifisch die Konfigurationsordner auswählen - "Weiter" - "Zeitplan" ganz wie ihr wollt - "Weiter" - wichtig nun bei "Allgemeine Einstellungen" die "Sicherungsaufbewahrung" so einzustellen wie es auf das Ziel passt. Ich persönlich bin allgemein ein riesen Freund von "Intelligente Sicherungsaufbewahrung". Aber auch andere Optionen hätten hier durchaus Sinn, je nach dem wie oft ihr an euren Konfigurationen Anpassungen macht.
 
-## Basics - Automatisches Backup-Script für die gesamte Festplatte/SD-Karte auf Netzwerkspeicher
+## OPTIONAL - Automatisches Backup-Script für die gesamte SD-Karte auf NAS
 
 ### <u>Bevorzugt und der einfachheithalber als root auszuführen! Das Backup wird ohne Root-Rechte nicht durchführbar sein.</u>
 
@@ -109,7 +109,7 @@ https://en.wikipedia.org/wiki/Cron
 - Es wird nicht mehr als ein Backup pro Tag gemacht, auch wenn ihr mit `@reboot` 20 Mal an einem Tag neustartet.
 - Lasst den Pi lange genug laufen wenn ihr wisst, dass er gerade das Backup macht. Bei einer 200GB SD-Karte kann es bis zu wenige Stunden dauern!
 
-## Basics - Automatisches Backup-Script für Klipper-Konfigurationsdateien auf FritzNAS
+## ALTE METHODE - Automatisches Backup-Script für Klipper-Konfigurationsdateien auf FritzNAS
   
 ### <u>Fritzbox Benutzer anlegen</u>
 - Auf Fritzbox-Oberfläche einloggen

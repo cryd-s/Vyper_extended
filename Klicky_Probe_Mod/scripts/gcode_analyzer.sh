@@ -10,15 +10,15 @@ IP=192.168.1.65
 config_loc=$HOME/klipper_config/
 
 # please check user permissions for execution
-# if needed do "sudo chown gcode_analyzer_2.0.sh" on this file
+# if needed do "sudo chown gcode_analyzer.sh" on this file
 
 #############################
 # Dont touch the area below #
 
 
 # set variables
-safey=Y$limity #rename limit
-safex=Y$limitx #rename limit
+safey=$limity #rename limit
+safex=$limitx #rename limit
 
 y_conflict=/tmp/yconflict.txt
 x_conflict=/tmp/xconflict.txt

@@ -39,7 +39,7 @@ for i in $SERVICES; do
 version: '3'
 services:
   duplicati:
-    image: linuxserver/duplicati
+    image: duplicati/duplicati
     restart: unless-stopped
     container_name: duplicati
     environment:

@@ -4,14 +4,15 @@
 
 IFS=","
 COMPOSE_DIR=$HOME/docker_compose
-SERVICES=portainer,watchtower,duplicati
+SERVICES=watchtower,duplicati
+#portainer
 
 # Install Docker
 
 if [[ ! -x "$(command -v docker)" ]]; then
   sudo apt update && sudo apt -y upgrade
   curl -sSL https://get.docker.com | sudo sh
-  sudo usermod -aG docker pi
+  sudo usermod -aG docker $USER
 else
   echo Docker already installed
 fi
@@ -67,21 +68,21 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 EOF
       sudo docker-compose -f $COMPOSE_DIR/$i/docker-compose.yml up -d
-    elif [[ "$i" == "portainer" ]]; then
-      cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: '3.7'
-services:
-  portainer:
-    image: portainer/portainer-ce
-    restart: unless-stopped
-    container_name: portainer
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /home/portainer:/data
-    ports:
-      - 9000:9000
-EOF
-      sudo docker-compose -f $COMPOSE_DIR/$i/docker-compose.yml up -d
+#    elif [[ "$i" == "portainer" ]]; then
+#      cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
+#version: '3.7'
+#services:
+#  portainer:
+#    image: portainer/portainer-ce
+#    restart: unless-stopped
+#    container_name: portainer
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#      - /home/portainer:/data
+#    ports:
+#      - 9000:9000
+#EOF
+#      sudo docker-compose -f $COMPOSE_DIR/$i/docker-compose.yml up -d
     fi
   fi
 done

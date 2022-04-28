@@ -9,7 +9,7 @@ sudo apt remove --purge -y docker-engine docker docker.io docker-ce docker-ce-cl
 sudo apt autoremove -y
 sudo apt autoclean
 
-sudo pip3 uninstall docker-compose
+sudo pip3 uninstall docker-compose -y
 
 rm -rf docker-compose
 rm -rf /home/duplicati

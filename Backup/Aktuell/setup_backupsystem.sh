@@ -36,7 +36,7 @@ for i in $SERVICES; do
   if [[ ! -f $COMPOSE_DIR/$i/docker-compose.yml ]]; then
     if [[ "$i" == "duplicati" ]]; then
       cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: 'latest'
+version: '3'
 services:
   duplicati:
     image: duplicati/duplicati

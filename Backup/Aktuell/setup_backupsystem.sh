@@ -36,7 +36,7 @@ for i in $SERVICES; do
   if [[ ! -f $COMPOSE_DIR/$i/docker-compose.yml ]]; then
     if [[ "$i" == "duplicati" ]]; then
       cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: '3'
+version: '3.8'
 services:
   duplicati:
     image: duplicati/duplicati
@@ -50,7 +50,7 @@ services:
 EOF
     elif [[ "$i" == "watchtower" ]]; then
       cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: '3.7'
+version: '3.8'
 services:
   watchtower:
     image: containrrr/watchtower
@@ -64,7 +64,7 @@ services:
 EOF
     elif [[ "$i" == "portainer" ]]; then
       cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: '3.7'
+version: '3.8'
 services:
   portainer:
     image: portainer/portainer-ce

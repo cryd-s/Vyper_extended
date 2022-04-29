@@ -1,4 +1,4 @@
-# Verschiedene Backup Möglichkeiten
+# Aktuelles Backup System
 
 ## AKTUELL - Automatisches Backupsystem und Verwaltung mit Web-UI auf diverse Zielsysteme wie Google Drive, Dropbox, NAS, SFTP, WebDAV und weitere
 
@@ -55,3 +55,24 @@ Am Ende sehen wir den Backup-Plan auf dem "Home"-Bildschirm. Mit einem Klick auf
 ## Restore
 
 TBD
+
+
+## Uninstall
+
+### <u>Script laden</u>    
+
+```
+wget https://raw.githubusercontent.com/cryd-s/Vyper_extended/main/Backup/Aktuell/uninstall.sh -P ~/scripts/
+```
+
+### <u>Script ausführbar machen</u>  
+  
+```
+chmod +x ~/scripts/uninstall.sh
+```
+
+### <u>Script ausführen</u>
+
+```
+~/scripts/uninstall.sh
+```

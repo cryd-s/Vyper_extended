@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set-x
 cd ~
 
 docker-compose -f docker-compose/duplicati/docker-compose.yml down
@@ -11,7 +12,7 @@ sudo apt autoclean
 
 sudo pip3 uninstall docker-compose -y
 
-rm -rf /home/pi/docker-compose
+rm -rf docker-compose
 rm -rf /home/duplicati
 
 sudo rm -rf /var/lib/docker

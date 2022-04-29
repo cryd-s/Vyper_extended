@@ -11,7 +11,8 @@ sudo apt autoclean
 
 sudo pip3 uninstall docker-compose -y
 
-rm -rf docker-compose
+rm -rf /home/pi/docker-compose
 rm -rf /home/duplicati
+
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd

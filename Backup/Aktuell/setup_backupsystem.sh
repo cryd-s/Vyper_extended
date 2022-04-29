@@ -3,7 +3,7 @@
 # Variables
 
 IFS=","
-COMPOSE_DIR=$HOME/docker_compose
+COMPOSE_DIR=$HOME/docker-compose
 SERVICES=watchtower,duplicati
 #portainer
 

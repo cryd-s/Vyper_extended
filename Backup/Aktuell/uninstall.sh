@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set-x
 cd ~
 
 docker-compose -f docker-compose/duplicati/docker-compose.yml down

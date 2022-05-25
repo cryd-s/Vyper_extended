@@ -66,9 +66,13 @@ Trage in der user_variable.cfg unter der Sektion "Peripheral" deine gewünschten
   
 ---
 
-### <u>SuperSlicer</u>
+### <u>SuperSlicer</u>  
   
-Ausgabeoptionen: 
+Druckereinstellungen / Benutzerdefinierter GCODE  
+  
+`START_PRINT BED={first_layer_bed_temperature} EXTRUDER={first_layer_temperature} CHAMBER=[chamber_temperature] FILAMENT={filament_type}`
+  
+<u>Optional:</u>
+Ausgabeoptionen/Ausgabe-Dateiname-Format:  
   
 `[input_filename_base]-[print_settings_id]-[filament_settings_id].gcode`
-

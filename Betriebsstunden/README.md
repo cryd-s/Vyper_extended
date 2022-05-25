@@ -47,13 +47,13 @@ gcode:
 ```
   
 ### <u>In Printer cfg einfügen</u>
-
+```
 [include ./printtime.cfg]
 [include ./filter.cfg]
 [include ./user_variable.cfg]
 [include ./display.cfg]
 [include ./boot.cfg]
-
+```  
 [save_variables]
 filename: /home/pi/klipper_config/.variables.stb
   

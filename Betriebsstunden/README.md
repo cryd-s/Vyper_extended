@@ -8,14 +8,19 @@ Thanks for the great groundwork
 #############################################################################  
   
 
-### <u>Voraussetzung</u> 
+## <u>Voraussetzung</u> 
   
 - Start macro namens: `[gcode_macro START_PRINT] `
 - End macro namens: `[gcode_macro END_PRINT] `
-- Cancle macro names: `[gcode_macro CANCEL_PRINT]`
-*Als Beispielt im examples Ordner*
+- Cancle macro names: `[gcode_macro CANCEL_PRINT]`  
+*Als Beispielt im examples Ordner*  
+   
 - Nevermore Lüfter Pin noch nicht verwendet
   
+--- 
+  
+## <u>Installation</u>  
+...........................................................................
 ### <u>Configs einfügen</u>   
   
 1. printtime.cfg -- *duration config*
@@ -24,13 +29,15 @@ Thanks for the great groundwork
 4. display.cfg -- *Diplay statistic menue*
 5. boot.cfg  -- *Initialisiert User_variablen*  
   
+...........................................................................
 ### <u>In End_Print einfügen</u>  
   
 ```
     _ADD_PRINT_TIME
     _SD_PRINT_STATS R='done'
     _SD_PRINTER_STATS
-```
+    UPDATE_DELAYED_GCODE ID=filter_off DURATION=500
+ ```
   
 ### <u>In Cancle_Print einfügen</u>
   
@@ -45,14 +52,8 @@ Thanks for the great groundwork
 [gcode_macro START_PRINT]
 variable_var: {'filter'      : True}
 gcode:  
-{% set FILAMENT_TYPE = params.FILAMENT|default(PLA)|string %}
-{% if FILAMENT_TYPE == "ABS" or FILAMENT_TYPE == "ASA" %}
-        _FILTER_ON
-        {% set var = {'filter'      : True} %}
-    {% else %}
-        SET_FAN_SPEED FAN=filter SPEED=0
-        {% set var = {'filter'      : False} %}
-    {% endif %}
+    # Hier steht dein normaler Startcode
+    _FILTER_ON
 ```
   
 ### <u>In Printer cfg einfügen</u>
@@ -66,23 +67,40 @@ gcode:
 [save_variables]
 filename: /home/pi/klipper_config/.variables.stb
   
-```
----
-    
-
+```  
+  
+      
 ### <u>Filter konfigurieren</u>
   
 Trage in der user_variable.cfg unter der Sektion "Peripheral" deine gewünschten Werte wie speed und Wartungsintervall ein.
   
 ---
 
+
+# <u>Optional</u> 
+   
 ### <u>SuperSlicer</u>  
   
-Druckereinstellungen / Benutzerdefinierter GCODE  
+<u>Druckereinstellungen / Benutzerdefinierter GCODE:  </u>
   
 `START_PRINT BED={first_layer_bed_temperature} EXTRUDER={first_layer_temperature} CHAMBER=[chamber_temperature] FILAMENT={filament_type}`
   
-<u>Optional:</u>
-Ausgabeoptionen/Ausgabe-Dateiname-Format:  
+<u>Ausgabeoptionen/Ausgabe-Dateiname-Format:  </u>  
   
 `[input_filename_base]-[print_settings_id]-[filament_settings_id].gcode`
+
+<u>Start Macro:  </u>
+
+```
+[gcode_macro START_PRINT]
+variable_var: {'filter'      : True}
+gcode:  
+{% set FILAMENT_TYPE = params.FILAMENT|default(PLA)|string %}
+{% if FILAMENT_TYPE == "ABS" or FILAMENT_TYPE == "ASA" %}
+        _FILTER_ON
+        {% set var = {'filter'      : True} %}
+    {% else %}
+        SET_FAN_SPEED FAN=filter SPEED=0
+        {% set var = {'filter'      : False} %}
+    {% endif %}
+```

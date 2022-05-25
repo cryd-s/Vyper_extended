@@ -1,5 +1,12 @@
 # Nevermore Wartungsintervall  
   
+############################################################################# 
+  This config a used to track the usage of the filter like the nevermore.   
+  Its oriented to the github repo of Zellner Alex.		            	
+  https://github.com/zellneralex/klipper_config						   
+  Thanks for the great groundwork									     
+#############################################################################
+  
 ### <u>Configs einfügen</u>   
   
 1. printtime.cfg -- *duration config*

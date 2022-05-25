@@ -7,6 +7,15 @@ https://github.com/zellneralex/klipper_config
 Thanks for the great groundwork  									     
 #############################################################################  
   
+
+### <u>Voraussetzung</u> 
+  
+- Start macro namens: `[gcode_macro START_PRINT] `
+- End macro namens: `[gcode_macro END_PRINT] `
+- Cancle macro names: `[gcode_macro CANCEL_PRINT]`
+*Als Beispielt im examples Ordner*
+- Nevermore Lüfter Pin noch nicht verwendet
+  
 ### <u>Configs einfügen</u>   
   
 1. printtime.cfg -- *duration config*
@@ -53,10 +62,11 @@ gcode:
 [include ./user_variable.cfg]
 [include ./display.cfg]
 [include ./boot.cfg]
-```  
+
 [save_variables]
 filename: /home/pi/klipper_config/.variables.stb
   
+```
 ---
     
 

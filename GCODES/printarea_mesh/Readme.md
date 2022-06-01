@@ -22,7 +22,7 @@ variable_mesh_max_y :245
 ---     
 **<u>Folgender Startcode ist für den Superslicer zu benutzen:</u>**  
   
-`START_PRINT T_BED={first_layer_bed_temperature} T_EXTRUDER={first_layer_temperature} AREA_START_X={first_layer_print_min[0]} AREA_START_Y={first_layer_print_min[1]} AREA_END_X={first_layer_print_max[0]} AREA_END_Y={first_layer_print_max[1]}`
+`START_PRINT BED={first_layer_bed_temperature} EXTRUDER={first_layer_temperature} AREA_START_X={first_layer_print_min[0]} AREA_START_Y={first_layer_print_min[1]} AREA_END_X={first_layer_print_max[0]} AREA_END_Y={first_layer_print_max[1]}`
    
 _Falls Ihr andere Name für die Variablen von Extruder und Bed Temperatur habt, müssen diese natürlich auch angepasst werden_  
   

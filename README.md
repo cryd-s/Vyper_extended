@@ -119,3 +119,5 @@ STL: https://www.klipper3d.org/prints/ringing_tower.stl
 
 >TUNING_TOWER COMMAND=SET_VELOCITY_LIMIT PARAMETER=ACCEL START=1250 FACTOR=100 BAND=5
 
+Have fun and join our discord!
+

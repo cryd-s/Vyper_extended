@@ -10,7 +10,14 @@ geht auf <u>**eigene Gefahr**</u>.
 Daher prüft bitte, ob diese für euren Drucker passen und euch logisch erscheinen.
   
 ---
+Installation:
+------
   
+1. screw.cfg in euer klipper_config Verzeichnis kopieren
+2. in printer.cfg einbinden `[include screw.cfg]`
+3. Save&restart
+
+--- 
 Befehle:
 ------
 

@@ -30,7 +30,6 @@ ACCEPT
 
 
 ### STL 
-https://www.prusaprinters.org/de/prints/117941-anycubic-vyper-bl-touch-mount
 https://www.thingiverse.com/thing:5195119
 
 ___________________________________________________________________________

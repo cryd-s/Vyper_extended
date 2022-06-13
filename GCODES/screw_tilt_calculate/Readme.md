@@ -40,6 +40,10 @@ vorne_links_aussen (base) : x=30.0, y=42.0, z=2.08780
 >vorne_rechts_aussen  : z=2.08530 : adjust CCW 00:00 -> passt   
 
 
+<p align="left">
+  <img src="./images/schraubenpositionen.jpg" width="500" title="Schraubenpositionen">
+</p>
+
 
 --- 
 Dokumentation

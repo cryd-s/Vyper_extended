@@ -21,9 +21,10 @@ die Dämpfer müssen zugeschnitten werden. Schablone ist im discord hinterlegt
 Packung kaufen https://printbay.eu/Anycubic  
 
 <u>Stanzer:</u>
-- https://amzn.to/39iBpUV  
+- https://amzn.to/39iBpUV ; https://amzn.to/3QjCTyF
 
 <u>Magnetfolie:</u>    
+https://printbay.eu/Magnetfolie-310x310 ;  https://princore.de/products/magnetplatte?variant=39746810249315 ; https://www.kris3d.de/graviflex-magnetfolie-200-ARTK3D-43318
 
 Hier habt ihr mehrere Möglichkeiten:
 - Löcher ausstanzen und dann so lassen (so machen es die Meisten)

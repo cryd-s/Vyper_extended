@@ -1,4 +1,4 @@
-# Cancle Objects installieren  
+# Cancel Objects installieren  
   
  Dieser Guide zeigt euch, wie ihr mit Klipper und Susi Objekte, die gerade gedruckt werden,
   abbrechen könnt.

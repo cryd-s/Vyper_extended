@@ -12,7 +12,7 @@
 **<u>Benötigetes Programm laden und installieren</u>**
   
 <u>Exe installieren</u>
-- download https://github.com/kageurufu/cancelobject-preprocessor/releases (für euer Betriebssystem)
+- download https://github.com/kageurufu/preprocess_cancellation/releases/latest (für euer Betriebssystem)
 - in Superslicer Ordner verschieben. Dort wo die Superslicer.exe liegt  
 <br />  
 >*Die Exe könnt ihr gerne von einem Virenprogramm prüfen lassen. Windows kann sich melden, da diese nicht lizensiert ist.*

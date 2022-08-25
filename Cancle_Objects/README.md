@@ -10,7 +10,6 @@ preprocess_cancellation.exe;
 Now, after slicing, a extra proces runs and enables the exclusion per object in Mainsail (probably also fluid).
 
 It only becomes visable when a print started in your PAUSE/CANCEL tab.
-
-
-https://share.g-portal.com/v1y1ws.png
-![Alt text](images/cancle_onjects_example.jpg?raw=true "Title")
+  
+  
+![Alt text](/images/cancle_objects_example.png)

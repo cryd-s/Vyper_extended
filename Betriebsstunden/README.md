@@ -28,7 +28,20 @@ Thanks for the great groundwork
 3. user_variable.cfg -- *User variablen*
 4. display.cfg -- *Diplay statistic menue*
 5. boot.cfg  -- *Initialisiert User_variablen*  
+
+...........................................................................
+### <u>Scripts einfügen</u>   
   
+1. Ordner "/home/pi/klipper_config/scripts/Nevermore_Scripts/" anlegen
+2. Scripts aus Script Ordner hochladen
+3. .ftime.stb, get_filter_time.sh, reset_filter_time.sh
+4. Gcode Shell Commander mit Kiauh installieren (4 Advanced/ 8 Gcode Shell Commander)
+5. kiauh 
+```
+cd ~
+git clone https://github.com/th33xitus/kiauh.git
+./kiauh/kiauh.sh
+```
 ...........................................................................
 ### <u>In End_Print einfügen</u>  
   

@@ -15,7 +15,7 @@ Was brauchst du:
 <u>Dämpfer:</u>
 - für Sparfüchse: 1x https://amzn.to/39nxIgM    
 >Achtung:
-die Dämpfer müssen zugeschnitten werden. Schablone ist im discord hinterlegt  
+die Dämpfer müssen zugeschnitten werden. [Link zur Schablone]([https://www.google.com](https://www.printables.com/de/model/225620-cutting-tool-fur-vyper-silikon-dampfer))
   
 - für die Anderen. Ich glaube hier sind nur 4 Stk. drin, daher ggf. mehr als eine
 Packung kaufen https://printbay.eu/Anycubic  

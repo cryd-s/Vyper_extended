@@ -23,6 +23,7 @@ if [[ ! -f /usr/bin/docker-compose && ! -f /usr/local/bin/docker-compose ]]; the
   sudo apt update && sudo apt -y upgrade
   sudo apt install -y libffi-dev libssl-dev python3-dev python3 python3-pip 
   sudo apt install -y docker-compose
+  sudo apt update && sudo apt -y upgrade
 #  sudo pip3 install docker-compose
 else
   echo docker-compose already installed

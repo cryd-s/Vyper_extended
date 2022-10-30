@@ -21,8 +21,9 @@ fi
 
 if [[ ! -f /usr/bin/docker-compose && ! -f /usr/local/bin/docker-compose ]]; then
   sudo apt update && sudo apt -y upgrade
-  sudo apt install -y libffi-dev libssl-dev python3-dev python3 python3-pip
-  sudo pip3 install docker-compose
+  sudo apt install -y libffi-dev libssl-dev python3-dev python3 python3-pip 
+  sudo apt install -y docker-compose
+#  sudo pip3 install docker-compose
 else
   echo docker-compose already installed
 fi
@@ -36,9 +37,9 @@ for i in $SERVICES; do
   if [[ ! -f $COMPOSE_DIR/$i/docker-compose.yml ]]; then
     if [[ "$i" == "duplicati" ]]; then
       cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: '3.8'
+#version: '3.8'
 services:
-  duplicati:
+#  duplicati:
     image: duplicati/duplicati
     restart: unless-stopped
     container_name: duplicati
@@ -50,9 +51,9 @@ services:
 EOF
     elif [[ "$i" == "watchtower" ]]; then
       cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: '3.8'
+#version: '3.8'
 services:
-  watchtower:
+#  watchtower:
     image: containrrr/watchtower
     restart: unless-stopped
     container_name: watchtower
@@ -64,9 +65,9 @@ services:
 EOF
     elif [[ "$i" == "portainer" ]]; then
       cat << EOF > $COMPOSE_DIR/$i/docker-compose.yml
-version: '3.8'
+#version: '3.8'
 services:
-  portainer:
+#  portainer:
     image: portainer/portainer-ce
     restart: unless-stopped
     container_name: portainer

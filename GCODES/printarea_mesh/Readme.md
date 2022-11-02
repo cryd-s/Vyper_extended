@@ -37,7 +37,7 @@ _Falls Ihr andere Name für die Variablen von Extruder und Bed Temperatur habt, 
  --- 
  **<u>Folgender Code müsst ihr in euer Startcode einfügen:</u>**  
    
- `BED_MESH_PRINT_AREA AREA_START_X={params.AREA_START_X|float} AREA_START_Y={params.AREA_START_Y|float} AREA_END_X={params.AREA_END_X|float} AREA_END_Y={params.AREA_END_Y|float}``  
+ `BED_MESH_PRINT_AREA AREA_START_X={params.AREA_START_X|float} AREA_START_Y={params.AREA_START_Y|float} AREA_END_X={params.AREA_END_X|float} AREA_END_Y={params.AREA_END_Y|float}`  
  
  ---
 <u>**Wichtiger Hinweis:** </u>  

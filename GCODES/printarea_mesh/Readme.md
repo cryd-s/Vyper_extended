@@ -6,11 +6,11 @@ Um ein bedmesh im Druckbereich durchzuführen, muss einmal die "bedmesh_printare
 `variable_parameter_AREA_END_X & Y` = Endparameter X und Y  
 `variable_mesh_min_x & y` = Minimalwert X und Y  
 `variable_mesh_max_x & y` = Maximalwert X und Y  
-`variable_mesh_area_offset` = Offset der auf die Min und Max Werte gerechnet werden
-`variable_probe_samples` = Wie oft soll geprobed werden
-`variable_min_probe_count` = Mesh Größe
-`variable_probe_count_scale_factor` = Skaliert die Probecounts mit der Größe
-`variable_enable_reference_index` = Messpunkte werden auf einen Bezugspunkt bezogen
+`variable_mesh_area_offset` = Offset der auf die Min und Max Werte gerechnet werden  
+`variable_probe_samples` = Wie oft soll geprobed werden  
+`variable_min_probe_count` = Mesh Größe  
+`variable_probe_count_scale_factor` = Skaliert die Probecounts mit der Größe  
+`variable_enable_reference_index` = Messpunkte werden auf einen Bezugspunkt bezogen  
   
 ```
 variable_parameter_AREA_START : 0,0

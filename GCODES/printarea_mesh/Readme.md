@@ -1,9 +1,11 @@
 # Bedmesh in der "print area" (Druckbereich)
+
+Alle, die ein altes Skript benutzen bitte alle unten aufgeführten Punkte für den Startcode und den Slicer beachten!
   
 Um ein bedmesh im Druckbereich durchzuführen, muss einmal die "bedmesh_printarea.cfg" erfolgreich eingebunden sein und folgenden Parameter definiert werden:  
   
-`variable_parameter_AREA_START_X & Y` = Startparameter X und Y  
-`variable_parameter_AREA_END_X & Y` = Endparameter X und Y  
+`variable_parameter_AREA_START_X & Y` = Default Startparameter X und Y  
+`variable_parameter_AREA_END_X & Y` = Default Endparameter X und Y  
 `variable_mesh_min_x & y` = Minimalwert X und Y  
 `variable_mesh_max_x & y` = Maximalwert X und Y  
 `variable_mesh_area_offset` = Offset der auf die Min und Max Werte gerechnet werden  
@@ -30,14 +32,14 @@ variable_enable_reference_index : False
 ---     
 **<u>Folgender Startcode ist für den Superslicer zu benutzen:</u>**  
   
-`START_PRINT BED={first_layer_bed_temperature} EXTRUDER={first_layer_temperature} AREA_START_X={first_layer_print_min[0]} AREA_START_Y={first_layer_print_min[1]} AREA_END_X={first_layer_print_max[0]} AREA_END_Y={first_layer_print_max[1]}`
+`START_PRINT BED={first_layer_bed_temperature} EXTRUDER={first_layer_temperature} AREA_START={first_layer_print_min[0]},{first_layer_print_min[1]} AREA_END={first_layer_print_max[0]},{first_layer_print_max[1]}`
    
 _Falls Ihr andere Name für die Variablen von Extruder und Bed Temperatur habt, müssen diese natürlich auch angepasst werden_  
   
  --- 
  **<u>Folgender Code müsst ihr in euer Startcode einfügen:</u>**  
    
- `BED_MESH_PRINT_AREA AREA_START_X={params.AREA_START_X|float} AREA_START_Y={params.AREA_START_Y|float} AREA_END_X={params.AREA_END_X|float} AREA_END_Y={params.AREA_END_Y|float}`  
+ `BED_MESH_PRINT_AREA AREA_START={params.AREA_START|default("0,0")} AREA_END={params.AREA_END|default("0,0")}`  
  
  ---
 <u>**Wichtiger Hinweis:** </u>  

@@ -38,13 +38,15 @@ _Falls Ihr andere Name für die Variablen von Extruder und Bed Temperatur habt, 
   
  --- 
  **<u>Folgender Code müsst ihr in euer Startcode einfügen:</u>**  
-  
-`[gcode_macro START_PRINT]
+ 
+```
+[gcode_macro START_PRINT]
 variable_parameter_AREA_START : 0,0
 variable_parameter_AREA_END : 0,0
 gcode:
  #Euer Startcode 
- BED_MESH_PRINT_AREA AREA_START={params.AREA_START|default("0,0")} AREA_END={params.AREA_END|default("0,0")}`  
+ BED_MESH_PRINT_AREA AREA_START={params.AREA_START|default("0,0")} AREA_END={params.AREA_END|default("0,0")}
+```  
    
  ---
 <u>**Wichtiger Hinweis:** </u>  

@@ -14,6 +14,10 @@ Redline PLA | 1,28
 Redline ABS | 1,03  
 Redline ASA-X | 1,11  
 Redline PETG | 1,27  
+Redline Glitzer PLA | 1,24
 ESUN PLA | 1,23  
 ESUN PETG | 1,27  
 ESUN ABS+ | 1,06  
+Das Filament PLA| 1,24
+Das Filament PETG | 1,29
+Das Filament TPU | 1,23

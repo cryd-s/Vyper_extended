@@ -62,7 +62,7 @@ sudo reboot
 cd ~/klipper/
 ```
 ```
-sudo cp "./scripts/klipper-mcu-start.sh" /etc/init.d/klipper_mcu
+sudo cp ./scripts/klipper-mcu-start.sh /etc/init.d/klipper_mcu
 ```
 ```
 sudo update-rc.d klipper_mcu defaults

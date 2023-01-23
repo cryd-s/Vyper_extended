@@ -62,13 +62,13 @@ sudo reboot
 cd ~/klipper/
 ```
 ```
-sudo cp "./scripts/klipper-mcu-start.sh" /etc/init.d/klipper_mcu
+sudo cp ./scripts/klipper-mcu-start.sh /etc/init.d/klipper_mcu
 ```
 ```
 sudo update-rc.d klipper_mcu defaults
 ```
 ```
-sudo raspi-config            #enable SPI in interfacing options
+sudo raspi-config           
 ```
 ```
 sudo reboot
@@ -77,7 +77,7 @@ sudo reboot
 cd ~/klipper/
 ```
 ```
-make menuconfig              #Microcontroller: Linux process
+make menuconfig              
 ```
 ```
 sudo service klipper stop
@@ -92,7 +92,7 @@ sudo service klipper start
 sudo usermod -a -G tty pi
 ```
 ```
-ACCELEROMETER_QUERY          #Testing the Sensor if there is a Invalid adxl then check the wireing or the offical klipper site
+ACCELEROMETER_QUERY          
 ```
 ```
 TEST_RESONANCES AXIS=X

@@ -62,7 +62,7 @@ sudo reboot
 cd ~/klipper/
 ```
 ```
-sudo cp ./scripts/klipper-mcu-start.service /etc/init.d/klipper_mcu
+sudo cp /home/pi/klipper/scripts/klipper-mcu.service /etc/init.d/klipper_mcu
 ```
 ```
 sudo update-rc.d klipper_mcu defaults

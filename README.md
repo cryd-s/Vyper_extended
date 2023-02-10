@@ -11,6 +11,7 @@ https://book.cryd.de/books/dokumente/page/tutorial-kalibrierungsmakro
 
 # Input Shaping
 look on this pages:
+
 installation: https://book.cryd.de/books/dokumente/page/tutorial-adxl345-einrichten
 
 using: https://book.cryd.de/books/dokumente/page/tutorial-kalibrierungsmakro

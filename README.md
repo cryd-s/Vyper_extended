@@ -2,6 +2,7 @@
 This is a extended Vyper Klipper / Mainsail Config
 
 Link: https://www.youtube.com/watch?v=S_K7iB3jYMs&list=PLWqnUinimMN3Upj3a3BzVFsixutHB0ZP5
+
 Discord: https://discord.gg/kBdeP3ZtCY
 
 

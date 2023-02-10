@@ -6,7 +6,6 @@ Discord: https://discord.gg/kBdeP3ZtCY
 
 
 # Pressure Advance
-
 look on this page:
   using: https://book.cryd.de/books/dokumente/page/tutorial-kalibrierungsmakro
 

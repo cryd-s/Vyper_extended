@@ -26,7 +26,7 @@ variable_min_probe_count : 3
 ; scale up the probe count, should be 1.0 ~ < variable_max_probe_count/variable_min_probe_count
 variable_probe_count_scale_factor : 1.0
 ; enable preference index
-variable_enable_reference_index : False
+variable_enable_reference_index : True
 ```  
   
 ---     

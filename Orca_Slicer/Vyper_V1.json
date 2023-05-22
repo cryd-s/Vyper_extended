@@ -1,0 +1,64 @@
+{
+    "extruder_clearance_radius": "55",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "inherits": "Creality Ender-3 V2 0.4 nozzle",
+    "machine_end_gcode": "M117 Print End\nEND_PRINT",
+    "machine_max_acceleration_e": [
+        "1500",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "1500",
+        "500"
+    ],
+    "machine_max_acceleration_retracting": [
+        "1500",
+        "1000"
+    ],
+    "machine_max_acceleration_x": [
+        "1500",
+        "500"
+    ],
+    "machine_max_acceleration_y": [
+        "1500",
+        "500"
+    ],
+    "machine_max_jerk_x": [
+        "5",
+        "8"
+    ],
+    "machine_max_jerk_y": [
+        "5",
+        "8"
+    ],
+    "machine_max_speed_x": [
+        "200",
+        "500"
+    ],
+    "machine_max_speed_y": [
+        "200",
+        "500"
+    ],
+    "machine_max_speed_z": [
+        "5",
+        "10"
+    ],
+    "machine_start_gcode": "M117 \nSTART_PRINT EXTRUDER=[nozzle_temperature_initial_layer] BED=[hot_plate_temp_initial_layer]",
+    "min_layer_height": [
+        "0.12"
+    ],
+    "name": "Vyper_V1",
+    "printer_settings_id": "Vyper_V1",
+    "retraction_length": [
+        "3"
+    ],
+    "retraction_speed": [
+        "40"
+    ],
+    "use_firmware_retraction": "1",
+    "version": "1.5.1.2",
+    "wipe": [
+        "0"
+    ]
+}

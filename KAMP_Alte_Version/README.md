@@ -1,3 +1,16 @@
+#Wichtig!!!
+
+Dieses Repo wurde nicht von uns erstellt, sondern von https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging/releases.
+
+Wir haben es für euch hier abgelegt, damit ihr die alte Version zu folgendem Video benutzen könnt
+
+https://youtu.be/vuDfx9PAlfw
+
+Wir danken den Erstellern für das tolle Makro.
+
+Crydteam
+
+
 <!-- KAMP Logo/Banner -->
 
 <p align=center>

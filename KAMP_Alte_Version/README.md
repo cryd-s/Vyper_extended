@@ -236,6 +236,7 @@ To begin, `ssh` into your device running klipper and use the following commands:
 cd
 git clone https://github.com/cryd-s/Vyper_extended.git
 cp -r ~/Vyper_extended/KAMP_Alte_Version/ ~/Klipper-Adaptive-Meshing-Purging
+mkdir ~/printer_data/config/KAMP
 ln -s ~/Klipper-Adaptive-Meshing-Purging/Configuration printer_data/config/KAMP
 ```
 

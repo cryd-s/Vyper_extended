@@ -234,8 +234,8 @@ To begin, `ssh` into your device running klipper and use the following commands:
 
 ```bash
 cd
-git clone https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
-ln -s ~/Klipper-Adaptive-Meshing-Purging/Configuration printer_data/config/KAMP
+git clone https://github.com/cryd-s/Vyper_extended.git
+ln -s ~/Vyper_extended/KAMP_Alte_Version/Configuration printer_data/config/KAMP
 ```
 
 Then, add the following snippet into your `printer.cfg` file: [^1]

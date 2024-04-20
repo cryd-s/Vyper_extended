@@ -41,16 +41,55 @@ origin: https://github.com/mainsail-crew/crowsnest.git
 ### <u>**Camera konfigureren**</u>
 - Die Konfig Datei ist folgende ~/klipper_config/webcam.conf
 ```
-[webcamd]
-log_path: ~/klipper_logs/webcamd.log
-log_level: quiet
+
+#### crowsnest.conf
+#### This is a typical default config.
+#### Also used as default in mainsail / MainsailOS
+#### See:
+#### https://github.com/mainsail-crew/crowsnest/blob/master/README.md
+#### for details to configure to your needs.
+
+
+#####################################################################
+####                                                            #####
+####      Information about ports and according URL's           #####
+####                                                            #####
+#####################################################################
+####                                                            #####
+####    Port 8080 equals /webcam/?action=[stream/snapshot]      #####
+####    Port 8081 equals /webcam2/?action=[stream/snapshot]     #####
+####    Port 8082 equals /webcam3/?action=[stream/snapshot]     #####
+####    Port 8083 equals /webcam4/?action=[stream/snapshot]     #####
+####                                                            #####
+####    Note: These ports are default for most Mainsail         #####
+####    installations. To use any other port would involve      #####
+####    changing the proxy configuration or using directly      #####
+####    http://<ip>:<port>/?action=[stream/snapshot]            #####
+####                                                            #####
+#####################################################################
+####    RTSP Stream URL: ( if enabled and supported )           #####
+####    rtsp://<ip>:<rtsp_port>/stream.h264                     #####
+#####################################################################
+
+
+[crowsnest]
+log_path: %LOGPATH%
+log_level: verbose                      # Valid Options are quiet/verbose/debug
+delete_log: false                       # Deletes log on every restart, if set to true
+no_proxy: false
 
 [cam 1]
-mode: mjpg
-port: 8080
-device: /dev/video0
-resolution: 1920x1080
-max_fps: 25
+mode: ustreamer                         # ustreamer - Provides mjpg and snapshots. (All devices)
+                                        # camera-streamer - Provides webrtc, mjpg and snapshots. (rpi + Raspi OS based only)
+enable_rtsp: false                      # If camera-streamer is used, this enables also usage of an rtsp server
+rtsp_port: 8554                         # Set different ports for each device!
+port: 8080                              # HTTP/MJPG Stream/Snapshot Port
+device: /dev/video0                     # See Log for available ...
+resolution: 640x480                     # widthxheight format
+max_fps: 15                             # If Hardware Supports this it will be forced, otherwise ignored/coerced.
+#custom_flags:                          # You can run the Stream Services with custom flags.
+#v4l2ctl:                               # Add v4l2-ctl parameters to setup your camera, see Log what your cam is capable of.
+
 ```
 
 *[cam 1] = Kamera zuordnung (Bitte immer nur die Zahl aufsteigend ändern)  

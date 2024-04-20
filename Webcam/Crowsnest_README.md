@@ -113,11 +113,13 @@ v4l2-ctl --set-ctrl=focus_auto=0
 ### <u>**Beispiel**</u>
 ```
 [cam 1]
-mode: mjpg                     # ustreamer/rtsp
-port: 8080                              # Port
+mode: ustreamer                         # ustreamer - Provides mjpg and snapshots. (All devices)
+                                        # camera-streamer - Provides webrtc, mjpg and snapshots. (rpi + Raspi OS based only)
+enable_rtsp: false                      # If camera-streamer is used, this enables also usage of an rtsp server
+rtsp_port: 8554                         # Set different ports for each device!
+port: 8080                              # HTTP/MJPG Stream/Snapshot Port
 device: /dev/video0                     # See Log for available ...
-resolution: 1280x720                   # widthxheight format
-max_fps: 30                             # If Hardware Supports this it will be forced, ohterwise ignored/coerced.
-#custom_flags:                          # You can run the Stream Services with custom flags.
+resolution: 640x480                     # widthxheight format
+max_fps: 30                             # If Hardware Supports this it will be forced, otherwise ignored/coerced.
 v4l2ctl: focus_auto=0,focus_absolute=30
 ```
